@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(RegexTool)
+project(PhysicsSimulator)
 find_package(IntelSYCL REQUIRED)
 find_package(MKL CONFIG REQUIRED)
 cmake_policy(SET CMP0079 NEW)
@@ -17,6 +17,7 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(${PROJECT_NAME} src/main.cpp
 )
 # Add third party libraries.
+add_subdirectory(libs)
 
 # target_include_directories(${PROJECT_NAME} PUBLIC include)
 #target_link_libraries(${PROJECT_NAME} Test)
