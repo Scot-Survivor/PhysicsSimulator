@@ -15,6 +15,12 @@ add_link_options(-fsycl -fsycl-unnamed-lambda)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(${PROJECT_NAME} src/main.cpp
+        src/VectorMath.cpp
+        src/VectorMath.h
+        src/RigidBody.cpp
+        src/RigidBody.h
+        src/World.cpp
+        src/World.h
 )
 # Add third party libraries.
 add_subdirectory(libs)
